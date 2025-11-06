@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frontend Hub — Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="blob one" aria-hidden></div>
+  <div class="blob two" aria-hidden></div>
+  <main class="card" role="main">
+    <h2>Login to your account</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <input id="email" name="email" type="email" placeholder=" " required />
+        <label for="email">Email</label>
+      </div>
+
+      <div class="input-group">
+        <input id="password" name="password" type="password" placeholder=" " required />
+        <label for="password">Password</label>
+      </div>
+
+      <button class="btn" type="submit">Sign In</button>
+    </form>
+
+    <div class="muted-links">
+      Don't have an account? <a href="#" id="openSignup">Sign Up</a>
+    </div>
+  </main>
+  <div id="signupCard" class="floating-card">
+    <div class="signup-header">
+      <h2>Create Account</h2>
+      <button class="close-btn" onclick="closeSignup()">✖</button>
+    </div>
+
+    <form id="signupForm">
+      <div class="input-group">
+        <input type="text" id="fullname" placeholder=" " required />
+        <label for="fullname">Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="signupEmail" placeholder=" " required />
+        <label for="signupEmail">Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="signupPassword" placeholder=" " required />
+        <label for="signupPassword">Password</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="confirmPassword" placeholder=" " required />
+        <label for="confirmPassword">Confirm Password</label>
+      </div>
+
+      <button class="btn" type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

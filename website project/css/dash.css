@@ -1,0 +1,17 @@
+   body { font-family: 'Poppins', sans-serif; margin:0; background:#111; color:#fff;}
+    .dash-content { padding: 2rem; }
+    .dash-header h1 { color: #00d4ff; }
+    .dash-cards { display:flex; gap:1rem; flex-wrap:wrap; margin:1rem 0; }
+    .dash-card { flex:1 1 200px; background:#1a1a1a; padding:1.5rem; border-radius:12px; text-align:center; box-shadow:0 0 10px #00d4ff33; transition:0.3s; }
+    .dash-card:hover { transform: translateY(-5px); box-shadow:0 0 20px #00d4ff66; }
+    .dash-card h2 { margin-bottom:0.5rem; color:#00d4ff; }
+    .dash-actions { margin:2rem 0; display:flex; gap:1rem; }
+    .action-btn { padding:0.8rem 1.5rem; background:#00d4ff; border:none; border-radius:8px; color:#111; font-weight:600; cursor:pointer; transition:0.3s; }
+    .action-btn:hover { background:#00a3cc; }
+    .dash-insights { background:#1a1a1a; padding:1rem 1.5rem; border-radius:12px; margin-bottom:2rem; }
+    .dash-activity table { width:100%; border-collapse:collapse; background:#1a1a1a; border-radius:12px; overflow:hidden; }
+    .dash-activity th, .dash-activity td { padding:0.8rem; text-align:left; border-bottom:1px solid #333; }
+    .dash-activity th { background:#222; color:#00d4ff; }
+    .progress-bar { background:#222; border-radius:12px; overflow:hidden; height:18px; }
+    .progress-fill { height:100%; background:#00d4ff; width:0%; transition: width 0.8s ease; }
+ 

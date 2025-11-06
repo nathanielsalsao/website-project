@@ -1,0 +1,169 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+main {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding: 90px;
+}
+
+
+
+
+
+.career-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  gap: 350px;
+  position: relative;
+}
+#carousel {
+  position: relative;
+  width: 100%;
+  height: 407px;
+}
+
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 300px;
+  height: 407px;
+  flex: 1 1 45%;
+  background: transparent;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.25);
+}
+
+.carousel-item div {
+  text-align: center;
+  padding: 10px;
+}
+
+.carousel-item h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.carousel-item p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+
+.roadmap-link {
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #4b2bcc, #1a1f4f);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.roadmap-link::after {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: all 0.5s ease;
+}
+
+.roadmap-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(124, 92, 255, 0.5);
+}
+
+.roadmap-link:hover::after {
+  width: 200%;
+  left: 100%;
+}
+
+
+.carousel-btn {
+  position: relative; 
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10; 
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-btn:hover {
+  
+  background: linear-gradient(90deg, #7c5cff, #00d4ff);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+.carousel-btn.prev {
+  order: 0; 
+}
+
+#carousel {
+  order: 1; 
+}
+
+.carousel-btn.next {
+  order: 2; 
+}
+
+.highlight {
+  color: #00d4ff;
+  transition: all 0.3s ease;
+}
+
+.highlight:hover {
+  color: #7c5cff;
+}

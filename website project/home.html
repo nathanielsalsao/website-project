@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Hub</title>
+
+
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+<body>
+
+ <div class="nav-area">
+  <nav class="navbar">
+    <div class="container">
+      <button class="sidebar-toggle" onclick="openSidebar()">☰</button>
+      <div class="logo">FH</div>
+      <ul class="nav-links">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="content.html">Content</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </div>
+  
+  </nav>
+
+
+  <div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="closeSidebar()">×</button>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="profileacc.html">Profile</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+
+    </ul>
+  </div>
+  </div>
+
+ 
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Discover Your <span>IT Career Path</span></h1>
+    <p>Uncover the tech role that matches your skills 
+      and interests. Whether you're into coding, data, or cybersecurity — IT Career
+       Explorer helps you find your perfect fit in the digital world</p>
+    <a href="practice.html" class="btn-hero">Get Started</a>
+  </div>
+</section>
+
+
+
+<section class="intro-video-section">
+  <h2 class="intro-title">Discover Your Career Path</h2>
+  <p class="intro-desc">
+    Unsure which path to take? Watch this short video to gain insights into different careers, 
+    understand what drives professionals to succeed, and learn how to find a job that truly fits your passion and goals.
+  </p>
+
+  <div class="floating-video-card">
+  <div class="video-container">
+    <a href="https://www.youtube.com/watch?v=K2mP36DoekA" target="_blank" class="video-placeholder">
+      <img src="https://img.youtube.com/vi/K2mP36DoekA/hqdefault.jpg" alt="Watch on YouTube">
+    </a>
+  </div>
+</div>
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+<section class="carousel-section">
+ <div class="carousel-header">
+    <h2>Discover Your Career Path</h2>
+    <p>Explore inspiring roles and find the one that matches your passion.</p>
+  </div>
+  <div class="outer-card" id="outerCard">
+    <div class="carousel" id="carousel">
+
+      <div class="slide active">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/SE.jpg" alt="Slide 1">
+          </div>
+          <div class="text-container">
+            <h2>Software Engineer</h2>
+            <p>A Software Engineer designs, develops, and maintains software systems. They use programming skills to create efficient, reliable, and user-friendly applications that meet specific needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/AE.jpg" alt="Slide 2">
+          </div>
+          <div class="text-container">
+            <h2>AI/ML Engineer</h2>
+            <p>AI/ML Engineer develops systems that enable machines to learn and make decisions. They design algorithms, train models, and use data to create intelligent solutions for real-world problems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/DS.jpg" alt="Slide 3">
+          </div>
+          <div class="text-container">
+            <h2>Data Scientist</h2>
+            <p>A Data Scientist analyzes and interprets complex data to uncover patterns, insights, and trends. They use statistics, programming, and machine learning to help guide smart business and research decisions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/CS.jpg" alt="Slide 4">
+          </div>
+          <div class="text-container">
+            <h2>Cybersecurity Specialist</h2>
+            <p>Protects systems and networks from cyber threats, ensuring data integrity, confidentiality, and availability using advanced security measures.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/CE.jpg" alt="Slide 5">
+          </div>
+          <div class="text-container">
+            <h2>Cloud Engineer</h2>
+            <p>Designs, implements, and manages cloud infrastructure and services, ensuring scalability, security, and performance in cloud environments.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/DE.jpg" alt="Slide 6">
+          </div>
+          <div class="text-container">
+            <h2>DevOps Engineer</h2>
+            <p>Bridges development and operations teams to automate processes, monitor systems, and improve deployment cycles for software projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/FE.jpg" alt="Slide 7">
+          </div>
+          <div class="text-container">
+            <h2>Full-Stack Developer</h2>
+            <p>Handles both frontend and backend development, creating complete web applications that are interactive, efficient, and responsive.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/MD.jpg" alt="Slide 8">
+          </div>
+          <div class="text-container">
+            <h2>Mobile App Developer</h2>
+            <p>Develops mobile applications for Android and iOS platforms, focusing on user experience, performance, and functionality.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/WD.jpg" alt="Slide 9">
+          </div>
+          <div class="text-container">
+            <h2>Web Developer</h2>
+            <p>Builds websites and web applications, implementing design, functionality, and responsiveness using modern technologies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="inner-card">
+          <div class="image-container">
+            <img src="image/UD.jpg" alt="Slide 10">
+          </div>
+          <div class="text-container">
+            <h2>UI/UX Designer</h2>
+            <p>Designs user interfaces and experiences for digital products, ensuring they are visually appealing, intuitive, and user-friendly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="overview-section">
+    <h2 class="overview-title">IT Career Explorer</h2>
+    <p class="overview-text">
+      IT Career Explorer helps you discover which IT path suits you best. Through a quick quiz, you’ll explore roles like 
+      <span>Web Developer</span>, <span>Data Scientist</span>, <span>Cybersecurity Specialist</span>, and more — making career exploration simple and fun.
+    </p>
+      <a href="practice.html" class="quiz-btn">Go to Quiz</a>
+  </section>
+<div class="about-mission">
+
+
+  <section id="about" class="about-section">
+  <h2 class="about-title">About Frontend Hub</h2>
+  <div class="about-container">
+    <div class="about-card">
+      <h3 class="about-subtitle">Our Purpose</h3>
+      <p>
+         To provide a hands-on learning environment where users can explore, practice, 
+  and build real-world frontend projects while discovering potential career paths in tech.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3 class="about-subtitle">Our Goal</h3>
+      <p>
+      To continuously enhance the <strong>Career Path Explorer</strong> experience by integrating 
+  interactive tools, learning resources, and practical challenges that help users grow their skills and confidence.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="mv-section">
+    <div class="mv-container">
+      <div class="mv-card">
+        <h3 class="mv-title">Our Mission</h3>
+        <p class="mv-text">
+          To empower aspiring IT professionals by providing an interactive platform that guides them toward the right career path. 
+          We aim to make learning about the tech industry engaging, informative, and accessible for everyone, regardless of background.
+        </p>
+      </div>
+      <div class="mv-card">
+        <h3 class="mv-title">Our Vision</h3>
+        <p class="mv-text">
+          To become the leading digital hub for IT career discovery — inspiring the next generation of innovators, developers, and leaders 
+          who will shape the future of technology with passion, skill, and purpose.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <section class="features-section">
+    <h2 class="features-title">Why Choose IT Career Explorer?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3 class="feature-title">Discover Your Strengths</h3>
+        <p class="feature-desc">Find out which IT career matches your skills and interests through our interactive quiz.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <h3 class="feature-title">Learn About Careers</h3>
+        <p class="feature-desc">Understand what each IT role does, from coding websites to managing data or securing systems.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3 class="feature-title">Personalized Results</h3>
+        <p class="feature-desc">Get customized suggestions based on your answers and explore paths that fit your goals.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3 class="feature-title">Career Growth Insights</h3>
+        <p class="feature-desc">See how each IT role is growing in demand and what skills are needed to succeed in the field.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3 class="feature-title">Stay Industry-Ready</h3>
+        <p class="feature-desc">Explore emerging technologies, tools, and frameworks to prepare for the real-world tech environment.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <h3 class="feature-title">Guidance & Support</h3>
+        <p class="feature-desc">Access helpful tips and guidance for building a successful IT career from start to finish.</p>
+      </div>
+    </div>
+  </section>
+ 
+
+
+<footer class="footer">
+  <p>© 2025 Frontend Hub | Designed by Nathaniel Salao</p>
+
+  <div class="footer-links">
+    <a href="home.html">Home</a>
+    <a href="https://github.com/nathanielsalsao?tab=repositories">Projects</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0)" onclick="toggleContactCard()">Contact</a>
+
+  </div>
+
+  <div class="footer-social">
+    <a href="https://github.com/nathanielsalsao" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.facebook.com/nathaniel.salao.2024" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/nata.deccco/" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <p class="footer-source">
+    Source Code available on <a href="https://github.com/nathanielsalsao/ewan/tree/main/website%20project" target="_blank">GitHub</a>
+  </p>
+</footer>
+
+<div class="contact-card" id="contactCard">
+  <div class="contact-header">
+    <h3>Contact Us</h3>
+    <button class="close-btn" onclick="toggleContactCard()">✖</button>
+  </div>
+
+  <form class="contact-form" id="contactForm">
+    <label>Name</label>
+    <input type="text" id="nameInput" placeholder="Your name" required>
+
+    <label>Email</label>
+    <input type="email" id="emailInput" placeholder="Email" required>
+
+    <label>Message</label>
+    <textarea id="messageInput" rows="3" placeholder="Message " required></textarea>
+
+    <button type="submit" class="send-btn">Send Message</button>
+
+    
+    <p class="form-message" id="formMessage"></p>
+  </form>
+</div>
+
+
+
+  <script src="js/home.js"></script>
+  <script src="js/nav.js"></script>
+  
+</body>
+</html>

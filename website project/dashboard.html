@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Hub | Dashboard</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/dash.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+</head>
+<body>
+
+<div class="nav-area">
+  <nav class="navbar">
+    <div class="container">
+      <button class="sidebar-toggle" onclick="openSidebar()">☰</button>
+      <div class="logo">FH</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="content.html">Content</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="profile.html" >Profile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="closeSidebar()">×</button>
+    <ul>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="profileacc.html">Profile</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="dash-content">
+
+  <div class="dash-header">
+    <h1>Welcome Back, User!</h1>
+    <p>Here's your IT learning overview</p>
+  </div>
+
+  <!-- Metrics Cards -->
+  <div class="dash-cards">
+    <div class="dash-card">
+      <h2>Total Content</h2>
+      <p id="totalContent">0</p>
+    </div>
+    <div class="dash-card">
+      <h2>Bookmarked Content</h2>
+      <p id="bookmarkedContent">0</p>
+    </div>
+    <div class="dash-card">
+      <h2>Profile Completion</h2>
+      <div class="progress-bar">
+        <div class="progress-fill" id="profileCompletion"></div>
+      </div>
+    </div>
+    <div class="dash-card">
+      <h2>Active Users Online</h2>
+      <p id="activeUsers">0</p>
+    </div>
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="dash-actions">
+    <button class="action-btn">Explore Content</button>
+    <button class="action-btn">Update Profile</button>
+    <button class="action-btn">Start Quiz</button>
+  </div>
+
+  <!-- Insights Panel -->
+  <div class="dash-insights">
+    <h2>Tip of the Day</h2>
+    <p>Check out new tutorials in the "Frontend" section to level up your skills!</p>
+  </div>
+
+  <!-- Recent Activity Table -->
+  <div class="dash-activity">
+    <h2>Recent Activity</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Activity</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="activityTable">
+        <!-- Filled by JS -->
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <p>© 2025 Frontend Hub | Designed by Nathaniel Salao</p>
+</footer>
+
+<script src="js/dash.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>
